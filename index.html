@@ -12,9 +12,22 @@
     <div>
       <h1 style="font-size: 6rem;"><b>Reactivity</b> در Vue 2</h1>
     </div>
+
+    <div style="display: flex; gap: 2;">
+      <div style="width: 100%;" id="countText"></div>
+      <button onclick="increment()">Increment</button>
+      <button onclick="decrement()">Decrement</button>
+      <button onclick="reset()">Reset</button>
+    </div>
   </div>
 
   <script src="./main.js"></script>
+  <script>
+    function updateText() {
+      document.getElementById('countText').innerText = count.value
+    }
+    updateText()
+  </script>
 </body>
 
 </html>

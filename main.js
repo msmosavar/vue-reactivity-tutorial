@@ -37,6 +37,7 @@ obj2.value = 3
 
 // Vue2
 const count = ref(0);
+
 // Log the count when it changes
 effect(() => {
   console.log(`Count: ${count.value}`);
@@ -57,6 +58,11 @@ increment(); // Logs: Count: 2
 decrement(); // Logs: Count: 1
 reset(); // Logs: Count: 0
 
+
+
+
+
+
 function ref(initialValue) {
   const r = {
     get value() {
@@ -70,6 +76,12 @@ function ref(initialValue) {
   };
   return r;
 }
+
+
+
+
+
+
 
 let activeEffect;
 const targetMap = new Map();
@@ -86,6 +98,11 @@ function track(target, key) {
     dep.add(activeEffect);
   }
 }
+
+
+
+
+
 function trigger(target, key) {
   const depsMap = targetMap.get(target);
   if (!depsMap) return;
