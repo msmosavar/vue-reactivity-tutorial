@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl" style="font-family: Vazirmatn, Arial, Helvetica, sans-serif;">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reactivity</title>
+</head>
+
+<body style="background-color: black;color: white;">
+  <div style="height:100vh;display: flex;flex-direction: column;justify-content: center;align-items: center;">
+    <div>
+      <h1 style="font-size: 2rem;"><b>Reactivity</b> چیه؟</h1>
+    </div>
+
+    <div style="font-size: 1.5rem; margin: 0.5rem 5rem;justify-self: right;">
+      <h6 style="font-size: 1.125em;margin-bottom: .5rem;"><span style="color: aqua;">State</span> چیچیه؟!</h6>
+      <p>
+        در واقع کلمه State در اکثر مواقع یه عبارت فانتزی برای "variables" یا «متغیر» هست.
+      </p>
+      <p>
+        وقتی به state یه برنامه اشاره می‌کنیم،
+        <span style="color: yellow;">
+          داریم به یکی از مقادیری که داخل اون می‌تونیم تغییر بدیم اشاره می‌کنیم
+          که در واقع هر مقداری که static نیست رو شامل میشه
+        </span>
+        . توی جاوااسکریپت state ها این موارد هستن:
+      </p>
+
+      <ul style="list-style-position: inside;">
+        <li>متغیرهای تعریف شده با let و const</li>
+        <li>خواص (properties) داخل object ها</li>
+        <li>مقادیر داخل آرایه‌ها یا سایر collection ها مثل map ها و set ها</li>
+      </ul>
+
+      <p style="font-size: 1.25rem;">
+        این‌ها رو به عنوان <span style="color: aqua;">root state</span> نام‌گذاری می‌کنیم؛ یعنی مقادیر واقعی و مشخص
+        (concrete).
+        در مقابل <span style="color: aqua;">derived state</span> یا state مشتق‌شده داریم که با ترکیب کردن root state ها
+        ایجاد میشن:
+      </p>
+
+      <pre style="direction: ltr;">
+        <code>
+          let a = 1;
+          let b = 2;
+  
+          function aPlusB() {
+            return a + b;
+          }
+        </code>
+      </pre>
+    </div>
+
+    <div style="display: flex;justify-content: center;gap: 2rem; margin-top: 2rem; font-size: 1.25rem;">
+      <a style="color: gray !important;" href="./index.html">صفحه اول</a>
+      <a style="color: gray !important;" href="./step-2.html">قبلی</a>
+      <a style="color: gray !important;" href="./step-4.html">بعدی</a>
+    </div>
+  </div>
+
+  <script src="./main.js"></script>
+</body>
+
+</html>

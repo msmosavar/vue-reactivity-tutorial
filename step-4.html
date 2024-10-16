@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl" style="font-family: Vazirmatn, Arial, Helvetica, sans-serif;">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reactivity</title>
+</head>
+
+<body style="background-color: black;color: white;">
+  <div style="height:100vh;display: flex;flex-direction: column;justify-content: center;align-items: center;">
+    <div>
+      <h1 style="font-size: 2rem; margin-bottom: 0;"><b>Reactivity</b> چیه؟</h1>
+    </div>
+
+    <div style="font-size: 1.25rem; margin: 0rem 5rem;justify-self: right;">
+      <h6 style="font-size: 1.125em;margin-bottom: .5rem;">
+        <span style="color: aqua;">برنامه‌نویسی Declarative </span>چیچیه؟!
+      </h6>
+
+      <p>
+        پارادایم‌های برنامه نویسی مختلفی مثل imperative و declarative و functional و ... وجود دارن:
+      </p>
+
+      <ul style="list-style-position: inside;">
+        <li style="margin-bottom: 0.5rem;">
+          توی برنامه‌نویسی <span style="color: aqua;">declarative</span> برنامه‌نویس این که <span
+            style="color: yellow;">چه چیزی (what)</span> باید رخ بده
+          رو توضیح میده، بدون نگرانی در مورد این که <span style="color: yellow;">چگونه (how)</span> اون کار انجام میشه.
+        </li>
+        <li>
+          توی برنامه‌نویسی <span style="color: aqua;">imperative</span> برنامه‌نویس مراحل دقیق این که <span
+            style="color: yellow;">چگونه (how)</span> چیزی باید رخ بده رو توضیح میده.
+        </li>
+      </ul>
+
+      <pre style="direction: ltr; margin-bottom: 0.5rem;border: 1px solid #454545;">
+        <code>
+          let a = 1;
+          let b = 2;
+
+          let aPlusB = a + b;
+
+          // update `a`
+          a = 4;
+          aPlusB = a + b;
+
+          // update `b`
+          b = 7;
+          aPlusB = a + b;
+        </code>
+      </pre>
+
+      <pre style="direction: ltr; margin: 0;border: 1px solid #454545;">
+        <code>
+          let a = 1;
+          let b = 2;
+
+          function aPlusB() {
+            return a + b;
+          }
+        </code>
+      </pre>
+    </div>
+
+    <div style="display: flex;justify-content: center;gap: 2rem; margin-top: 0rem; font-size: 1.25rem;">
+      <a style="color: gray !important;" href="./index.html">صفحه اول</a>
+      <a style="color: gray !important;" href="./step-3.html">قبلی</a>
+      <a style="color: gray !important;" href="./step-5.html">بعدی</a>
+    </div>
+  </div>
+
+  <script src="./main.js"></script>
+</body>
+
+</html>
